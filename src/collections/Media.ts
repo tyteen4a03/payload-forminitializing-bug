@@ -9,7 +9,15 @@ export const Media: CollectionConfig = {
     {
       name: 'alt',
       type: 'text',
-      required: true,
+    },
+    {
+      name: "testui",
+      type: 'ui',
+      admin: {
+        components: {
+          Field: '@/ClientTestComponent'
+        }
+      }
     },
   ],
   upload: true,
